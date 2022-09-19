@@ -14,8 +14,10 @@ void print_rev(char *s)
 	{
 		if (s[j] == '\0')
 			break;
-		j--;
+		j++;
 	}
+
+	for (j--; j >= 0; j--)
 		_putchar(s[j]);
 	_putchar('\n');
 }
