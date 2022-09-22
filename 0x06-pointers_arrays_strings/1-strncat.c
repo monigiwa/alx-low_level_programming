@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat - a function that concatenates two strings
- * @dest: parameter pointer to a char
- * @src: parameter pointer to a char
+ * _strncat - concatenates two strings
+ * @dest: destination
+ * @src: source
  * @n: amount of bytes used from src
- * Return: dest
+ * Return: the pointer to dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		count++;
 	}
 
-	while (count2 < 0)
+	while (count2 < n)
 	{
 		*(dest + count) = *(src + count2);
 		if (*(src + count2) == '\0')
