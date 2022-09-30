@@ -9,19 +9,13 @@
  */
 
 int main(int argc, char *argv[])
-{	
-	int result = 1, i;
+{
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	for (i = 1; i < argc; i++)
-	{
-		int x = strtol(argv[i], NULL, 10);
-		result = result * x;
-	}
-	printf("%d\n", result);
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
 }
