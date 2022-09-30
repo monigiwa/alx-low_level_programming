@@ -25,6 +25,7 @@ int main(int argc, char *argv[])
 		if (*ptr != 0)
 		{
 			printf("Error\n");
+			return (1);
 		}
 	}
 	printf("%d\n", sum);
