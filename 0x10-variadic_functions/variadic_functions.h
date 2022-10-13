@@ -5,6 +5,8 @@
 #define FALSE 0
 #define is ==
 #include <stdarg.h>
+#include <stdio.h>
+#include "variadic_functions.h"
 
 
 /**
